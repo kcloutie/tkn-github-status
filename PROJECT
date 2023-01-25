@@ -1,0 +1,16 @@
+domain: kcloutie.com
+layout:
+- go.kubebuilder.io/v3
+projectName: tkn-github-status
+repo: github.com/kcloutie/tkn-github-status
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kcloutie.com
+  group: status
+  kind: PipelineRunStatus
+  path: github.com/kcloutie/tkn-github-status/api/v1
+  version: v1
+version: "3"

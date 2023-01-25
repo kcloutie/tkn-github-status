@@ -1,0 +1,12 @@
+apiVersion: status.kcloutie.com/v1
+kind: PipelineRunStatus
+metadata:
+  labels:
+    app.kubernetes.io/name: pipelinerunstatus
+    app.kubernetes.io/instance: pipelinerunstatus-sample
+    app.kubernetes.io/part-of: tkn-github-status
+    app.kuberentes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: tkn-github-status
+  name: pipelinerunstatus-sample
+spec:
+  # TODO(user): Add fields here
